@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(20, 20, 20);
+}
+figure {
+  margin: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+#features {
+  margin-top: 100px;
+}
+
+.card figure {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.card figure img {
+  height: 100%;
+}
