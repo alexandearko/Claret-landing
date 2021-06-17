@@ -5,13 +5,74 @@ body {
 figure {
   margin: 0;
 }
-
+.cta-button {
+  height: 80px;
+  width: 246px;
+  border: none;
+  position: relative;
+}
+.btn-deco-tl {
+  position: absolute;
+  border: 10px solid #fff;
+  border-right: none;
+  border-bottom: none;
+  height: 80px;
+  width: 80px;
+  top: -35px;
+  left: -35px;
+}
+.btn-deco-br {
+  position: absolute;
+  border: 10px solid #fff;
+  border-top: none;
+  border-left: none;
+  height: 80px;
+  width: 80px;
+  bottom: -35px;
+  right: -35px;
+}
 /* HEADER */
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
 }
 .nav-link {
   margin-right: 38px;
+}
+
+/* HERO */
+#hero {
+  display: flex;
+  height: 700px;
+}
+.hero-info {
+  width: 35%;
+  background-color: #B3DDD1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.hero-info h2 {
+  font-weight: 500;
+  width: 370px;
+  text-align: center;
+}
+#hero .cta-button {
+  background-color: #fff;
+  margin-top: 132px;
+}
+.cta-button h3 {
+  width: 100%;
+  margin: 0;
+  color: #6A6969;
+}
+#hero figure {
+  width: 65%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 #features {
@@ -33,4 +94,31 @@ figure {
 }
 .card figure img {
   height: 100%;
+}
+
+@media screen and (max-width: 1359px) {
+  /* HERO */
+  .hero-info {
+    width: 45%;
+  }
+  #hero figure{
+    width: 55%;
+  }
+  #hero figure img{
+    margin-left: 172px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #hero {
+    height: 570px;
+  }
+  .hero-info {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+  #hero figure {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
 }
