@@ -31,6 +31,12 @@ figure {
   bottom: -35px;
   right: -35px;
 }
+.bg-1 {
+  background-color: #FFB0A1;
+}
+.bg-2 {
+  background-color: #80BEAF;
+}
 /* HEADER */
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
@@ -95,6 +101,9 @@ figure {
 .card figure img {
   height: 100%;
 }
+.card-body {
+  color: #fff;
+}
 
 @media screen and (max-width: 1359px) {
   /* HERO */
@@ -106,6 +115,11 @@ figure {
   }
   #hero figure img{
     margin-left: 172px;
+  }
+
+  /* FEATURES */
+  .card figure {
+    height: 400px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -120,5 +134,11 @@ figure {
     position: absolute;
     z-index: -1;
     width: 100%;
+  }
+
+  /* FEATURES */
+  .card figure,
+  .card-body {
+    height: 300px;
   }
 }
