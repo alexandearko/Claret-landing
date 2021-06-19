@@ -203,4 +203,7 @@ footer {
   .card-reverse {
     flex-direction: column-reverse;
   }
+  figure img {
+    height: 100%;
+  }
 }
