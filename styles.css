@@ -105,6 +105,15 @@ figure {
 .card-body {
   color: #fff;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 80px;
+}
+.card-body h5 {
+  margin-top: 40px;
 }
 .card-deco-left {
   position: absolute;
@@ -126,7 +135,7 @@ figure {
 }
 footer {
   height: 200px;
-  background-color: #D1DCE2;
+  background-color: #d1dce2;
 }
 
 @media screen and (max-width: 1359px) {
@@ -144,6 +153,9 @@ footer {
   /* FEATURES */
   .card figure {
     height: 400px;
+  }
+  .card-body {
+    padding: 0 40px;
   }
   .card-deco-left,
   .card-deco-right {
@@ -169,6 +181,15 @@ footer {
   .card-body {
     height: 300px;
   }
+  .card-body h3 {
+    font-size: 20px;
+  }
+  .card-body h5 {
+    font-size: 16px;
+  }
+  .card-body {
+    padding: 0 20px;
+  }
   .card-deco-left,
   .card-deco-right {
     height: 380px;
@@ -178,5 +199,8 @@ footer {
   .card-deco-left,
   .card-deco-right {
     display: none;
+  }
+  .card-reverse {
+    flex-direction: column-reverse;
   }
 }
